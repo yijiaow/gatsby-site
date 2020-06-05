@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "es5",
+    "lib": ["es5", "es6", "es7", "es2017", "dom"], // List of library files to be included in the compilation
+    "sourceMap": true, // Generate corresponding .map file
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDirs": ["src"],
+    "baseUrl": "src", // Base directory to resolve non-relative module names
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "types": ["react", "node"] // If "types" is specified, only packages listed will be included
+  },
+  "exclude": ["node_modules", ".storybook/**/*", "public", ".cache"]
+}
