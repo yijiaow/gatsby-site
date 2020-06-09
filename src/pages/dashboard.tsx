@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Link, navigate } from 'gatsby'
 import { Router } from '@reach/router'
 import styled from 'styled-components'
-import { IdentityContext } from '../utils/auth'
+import { IdentityContext } from '../contexts/auth'
 
 const Button = styled.button`
   padding: 1.5rem 2rem;
