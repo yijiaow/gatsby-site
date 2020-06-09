@@ -10,7 +10,6 @@
     "rootDirs": ["src"],
     "baseUrl": "src", // Base directory to resolve non-relative module names
     "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": true,
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
