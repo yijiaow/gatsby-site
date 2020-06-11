@@ -13,6 +13,7 @@ export const IdentityProvider = ({ children }) => {
       setUser(user)
     })
     netlifyIdentity.on('logout', () => {
+      console.log('logout event called')
       setUser(null)
     })
   }, [])
