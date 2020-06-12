@@ -12,7 +12,7 @@ module.exports = {
       '/.netlify/functions/',
       createProxyMiddleware({
         target: 'http://localhost:9000',
-        pathRewrite: { '/.netlify/functions/': '' },
+        pathRewrite: { '/src/functions/': '' },
       })
     )
   },

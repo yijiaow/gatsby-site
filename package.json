@@ -42,12 +42,14 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "build:app": "gatsby build && n",
-    "build:lambda": "",
+    "build": "run -s build:app build:lambda",
+    "build:app": "gatsby build",
+    "build:lambda": "netlify-lambda build src/functions",
+    "start": "run-p start:**",
+    "start:app": "yarn develop",
+    "start:lambda": "netlify-lambda serve src/functions",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
