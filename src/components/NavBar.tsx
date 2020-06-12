@@ -9,7 +9,10 @@ const Bar = styled.nav`
   height: 36px;
 `
 
-const NavLink = styled(Link)``
+const NavLink = styled(Link)`
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+`
 
 const NavBar = () => (
   <Bar>
